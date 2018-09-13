@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 119531312}
   - component: {fileID: 119531311}
   - component: {fileID: 119531315}
+  - component: {fileID: 119531316}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +207,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 2
   Sun: {fileID: 2035798815}
+--- !u!114 &119531316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 119531310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207f4663f58228b4f96328123d908910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIref: {fileID: 223969167859823568, guid: fdd9617bba7531c44ac3271b8d6afa1e, type: 2}
 --- !u!1 &1024523693
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +296,7 @@ GameObject:
   - component: {fileID: 2035798817}
   - component: {fileID: 2035798816}
   - component: {fileID: 2035798820}
+  - component: {fileID: 2035798821}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -368,3 +382,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetRef: {fileID: 1061172305877346, guid: c81241918729b1d4483ead27f9ddd04a, type: 2}
+--- !u!114 &2035798821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2035798815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d826854d0e61e7246abc51d4bf0ad191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sun
+  isPopulated: 0
+  Population: 0

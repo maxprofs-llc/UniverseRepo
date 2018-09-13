@@ -226,8 +226,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BasicCamera.cs" />
+    <Compile Include="Assets\Scripts\DetailsScript.cs" />
     <Compile Include="Assets\Scripts\GalaxyGeneration.cs" />
     <Compile Include="Assets\Scripts\PlanetScript.cs" />
+    <Compile Include="Assets\Scripts\SpawnUIDetails.cs" />
+    <Compile Include="Assets\Scripts\UIScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -10,7 +10,7 @@ public class GalaxyGeneration : MonoBehaviour {
     GameObject[] planets;
 	// Use this for initialization
 	void Start () {
-        int planetSize = Random.Range(6, 15);
+        int planetSize = Random.Range(10, 15);
         planetSpawn += this.transform.localScale.x;
         planets = new GameObject[planetSize];
 		for (int i = 0; i < planetSize; i++ )
@@ -18,6 +18,8 @@ public class GalaxyGeneration : MonoBehaviour {
             GameObject planet = Instantiate(planetRef);
             planet.GetComponent<PlanetScript>().init();
             planetSpawn += planet.GetComponent<PlanetScript>().size;
+            planet.AddComponent<DetailsScript>();
+            planet.GetComponent<DetailsScript>().init((int)planetSpawn);
             planet.transform.position = new Vector3(planetSpawn, 0, 0);
             planetSpawn += planet.GetComponent<PlanetScript>().size;
             planet.transform.parent = this.transform;

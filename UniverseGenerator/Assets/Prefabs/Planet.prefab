@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588fec7b73d497c4992d4d7728e77d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
   size: 0
   planetSkin:
   - {fileID: 2100000, guid: 1b3c7037387284844a4eb08e27bb2645, type: 2}
@@ -106,6 +105,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 685abe96c1e376d4ea9485ee31b96f9b, type: 2}
   - {fileID: 2100000, guid: 27594f2bebb1646469485658cfe9e446, type: 2}
   - {fileID: 2100000, guid: d85801e9a8cb67247aa045570982449c, type: 2}
+  - {fileID: 2100000, guid: 7bc8e2888e000ec4b8638235cf39fcac, type: 2}
+  - {fileID: 2100000, guid: 67594f5dd94c4f14d8cd9f47168bafd7, type: 2}
 --- !u!135 &135204693656339842
 SphereCollider:
   m_ObjectHideFlags: 1
