@@ -22,7 +22,7 @@ public class PlanetScript : MonoBehaviour {
 	void Update () {
 
 	}
-    
+    // test github
 
     string ReturnRandomName()
     {
