@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GalaxyGeneration : MonoBehaviour {
     public GameObject planetRef;
-
+    public GameObject humanRef;
     int planetSize;
     float planetSpawn = 0;
     GameObject[] planets;
 	// Use this for initialization
 	void Start () {
-        int planetSize = Random.Range(10, 15);
+        int planetSize = Random.Range(20, 50);
         planetSpawn += this.transform.localScale.x;
         planets = new GameObject[planetSize];
 		for (int i = 0; i < planetSize; i++ )
@@ -19,6 +19,7 @@ public class GalaxyGeneration : MonoBehaviour {
             planet.GetComponent<PlanetScript>().init();
             planetSpawn += planet.GetComponent<PlanetScript>().size;
             planet.AddComponent<DetailsScript>();
+            planet.GetComponent<DetailsScript>().InhabitRef = humanRef;
             planet.GetComponent<DetailsScript>().init((int)planetSpawn);
             planet.transform.position = new Vector3(planetSpawn, 0, 0);
             planetSpawn += planet.GetComponent<PlanetScript>().size;

@@ -27,6 +27,10 @@ public class BasicCamera : MonoBehaviour
 
     void Update()
     {
+        if (Input.anyKeyDown)
+        {
+            Debug.Log("Test");
+        }
         restUpdate();
         if (Input.GetMouseButtonDown(0))
         {

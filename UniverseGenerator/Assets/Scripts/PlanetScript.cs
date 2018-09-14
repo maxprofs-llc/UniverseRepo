@@ -9,7 +9,7 @@ public class PlanetScript : MonoBehaviour {
 
 	// Use this for initialization
 	public void init () {
-        size = Random.Range(3, 7);
+        size = Random.Range(30, 70);
         int skin = Random.Range(0, planetSkin.Length);
         this.transform.localScale = new Vector3(size, size, size);
         this.GetComponent<Renderer>().material = planetSkin[skin];
